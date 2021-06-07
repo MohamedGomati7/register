@@ -22,13 +22,13 @@
       <!-- Login Form -->
       <form method="POST" action="{{ route('login') }}">
         @csrf
-        <input type="text" id="name" class="fadeIn second" placeholder="login" name="name">
+        <input type="text" id="name" class="fadeIn second" placeholder="User Name" name="name">
         @error('name')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
         @enderror
-        <input type="password" id="password" class="fadeIn third" placeholder="password" name="password">
+        <input type="password" id="password" class="fadeIn third" placeholder="Password" name="password">
         @error('password')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
